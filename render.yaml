@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ai-life-assistant-api
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -w 2 -b 0.0.0.0:$PORT ai_life_assistant.app:app
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false

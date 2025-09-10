@@ -76,3 +76,15 @@ BASE_URL=https://your-api.onrender.com
 - CORS is enabled on the API.
 - Use `health` at `/health` to verify API.
 - Chat streaming endpoint is `/chat/stream`.
+
+---
+
+Optional:
+
+- Render one-click (use local `render.yaml`):
+
+```bash
+curl -fsSL https://render.com/deploy | bash
+```
+
+- Streamlit config (local dev): see `.streamlit/config.toml`.
