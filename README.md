@@ -2,6 +2,8 @@
 
 Web: Flask API + Streamlit frontend.
 
+Live demo (Streamlit): [ailifeassistant.streamlit.app](https://ailifeassistant.streamlit.app/)
+
 ## Local dev
 
 1. Python 3.12
@@ -76,6 +78,18 @@ BASE_URL=https://your-api.onrender.com
 - CORS is enabled on the API.
 - Use `health` at `/health` to verify API.
 - Chat streaming endpoint is `/chat/stream`.
+
+## Generative AI skills covered
+
+- Prompt engineering basics: concise instructions, role prompting, safety constraints.
+- Text summarization: extracting key points and bulletizing long text.
+- Task planning: breaking user goals into steps with timeboxing and dependencies.
+- Rephrasing/paraphrasing: style and tone adjustments while preserving meaning.
+- Chat orchestration: message history formatting and session persistence.
+- Streaming responses: incremental token handling and UI updates.
+- Error handling & fallbacks: API exceptions, timeouts, and safe defaults.
+- Model selection & config: choosing `gemini-1.5-flash` and tuning temperature/top‑p.
+- Tooling/infra: API keys management, CORS, and deployment (Gunicorn/Render/Streamlit Cloud).
 
 ---
 
